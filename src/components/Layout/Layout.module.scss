@@ -1,0 +1,20 @@
+.Layout{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100svh;
+    
+    .above,.below{
+        background-color: cornflowerblue;
+        color: black;
+        height: 3rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .childrenContainer{
+        height: 100%;
+        display: grid;
+        place-items: center;
+        font-size: 3rem;
+    }
+}
