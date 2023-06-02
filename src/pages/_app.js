@@ -9,8 +9,9 @@ export default function App({ Component, pageProps }) {
     setHeight(window.innerHeight)
     setWidth(window.innerWidth)
   }
-  window.addEventListener('resize',getSize)
+  let listener
   useEffect(()=>{
+    listener = window.addEventListener('resize',getSize)
     getSize()
   })
   return (
