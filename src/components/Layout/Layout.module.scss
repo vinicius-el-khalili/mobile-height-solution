@@ -2,19 +2,22 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100svh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #454545;
     
     .above,.below{
-        background-color: cornflowerblue;
+        background-color: #757575;
         color: black;
-        height: 3rem;
-        font-size: 3rem;
-        text-align: center;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
     }
     
     .childrenContainer{
         height: 100%;
         display: grid;
         place-items: center;
-        font-size: 3rem;
     }
 }
