@@ -5,9 +5,13 @@ import { useEffect, useState } from 'react'
 export default function App({ Component, pageProps }) {
   const [height,setHeight] = useState(0)
   const [width,setWidth] = useState(0)
-  useEffect(()=>{
+  const getSize = () => {
     setHeight(window.innerHeight)
     setWidth(window.innerWidth)
+  }
+  window.addEventListener('resize',getSize)
+  useEffect(()=>{
+    getSize()
   })
   return (
     <Layout
